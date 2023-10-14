@@ -1,0 +1,112 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class MyPanel extends JPanel {
+    private JLabel jcomp1;
+    private JLabel estatura;
+    private JTextField estaturaFill;
+    private JLabel peso;
+    private JTextField pesoFill;
+    private JButton calcular;
+    private JLabel cm;
+    private JLabel kg;
+    private JLabel edad;
+    private JTextField edadFill;
+    private JLabel genero;
+    private JTextField generoFill;
+    private JLabel pregunta;
+    private JCheckBox decision1;
+    private JCheckBox decision2;
+    private JLabel calorias;
+    private JLabel agua;
+    private JTextField jcomp18;
+    private JTextField jcomp19;
+    private JLabel kcal;
+    private JLabel ml;
+
+    public MyPanel() {
+        //construct components
+        jcomp1 = new JLabel ("Calculadora IMC");
+        estatura = new JLabel ("Estatura: ");
+        estaturaFill = new JTextField (5);
+        peso = new JLabel ("Peso:");
+        pesoFill = new JTextField (5);
+        calcular = new JButton ("Calcular");
+        cm = new JLabel ("cm");
+        kg = new JLabel ("kg");
+        edad = new JLabel ("Edad:");
+        edadFill = new JTextField (5);
+        genero = new JLabel ("Genero: ");
+        generoFill = new JTextField (5);
+        pregunta = new JLabel ("¿Desea obtener recomendaciones sobre una dieta saludable?");
+        decision1 = new JCheckBox ("Si");
+        decision2 = new JCheckBox ("No");
+        calorias = new JLabel ("Cantidad de calorías diarias:");
+        agua = new JLabel ("Cantidad de agua diaria:");
+        jcomp18 = new JTextField (5);
+        jcomp19 = new JTextField (5);
+        kcal = new JLabel ("kcal");
+        ml = new JLabel ("ml");
+
+        //adjust size and set layout
+        setPreferredSize (new Dimension (667, 361));
+        setLayout (null);
+
+        //add components
+        add (jcomp1);
+        add (estatura);
+        add (estaturaFill);
+        add (peso);
+        add (pesoFill);
+        add (calcular);
+        add (cm);
+        add (kg);
+        add (edad);
+        add (edadFill);
+        add (genero);
+        add (generoFill);
+        add (pregunta);
+        add (decision1);
+        add (decision2);
+        add (calorias);
+        add (agua);
+        add (jcomp18);
+        add (jcomp19);
+        add (kcal);
+        add (ml);
+
+        //set component bounds (only needed by Absolute Positioning)
+        jcomp1.setBounds (200, 5, 100, 25);
+        estatura.setBounds (10, 55, 100, 25);
+        estaturaFill.setBounds (70, 55, 120, 25);
+        peso.setBounds (10, 90, 100, 25);
+        pesoFill.setBounds (70, 90, 120, 25);
+        calcular.setBounds (20, 310, 100, 25);
+        cm.setBounds (195, 55, 30, 25);
+        kg.setBounds (195, 90, 20, 25);
+        edad.setBounds (250, 55, 100, 25);
+        edadFill.setBounds (305, 55, 100, 25);
+        genero.setBounds (250, 90, 100, 25);
+        generoFill.setBounds (305, 90, 100, 25);
+        pregunta.setBounds (15, 140, 500, 30);
+        decision1.setBounds (25, 170, 100, 25);
+        decision2.setBounds (130, 170, 100, 25);
+        calorias.setBounds (15, 210, 185, 25);
+        agua.setBounds (15, 245, 190, 25);
+        jcomp18.setBounds (190, 210, 100, 25);
+        jcomp19.setBounds (190, 250, 100, 25);
+        kcal.setBounds (305, 205, 100, 25);
+        ml.setBounds (300, 250, 100, 25);
+    }
+
+
+    public static void main (String[] args) {
+        JFrame frame = new JFrame ("MyPanel");
+        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add (new MyPanel());
+        frame.pack();
+        frame.setVisible (true);
+    }
+}
