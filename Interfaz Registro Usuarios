@@ -16,8 +16,8 @@ public class MyPanel extends JPanel {
     private JLabel genero;
     private JCheckBox mayorDeEdad;
     private JButton registrarse;
-    private JPasswordField contraseña;
-    private JPasswordField contraseñaR;
+    private JPasswordField contrasenia_ingresada;
+    private JPasswordField contraseniaR_ingresada;
     private JCheckBox mayorDeEdad;
     private JRadioButton generoOpcion1;
     private JRadioButton generoOpcion2;
@@ -43,8 +43,8 @@ public class MyPanel extends JPanel {
         genero = new JLabel ("Genero:");
         mayorDeEdad = new JCheckBox ("Declaro que soy mayor de edad");
         registrarse = new JButton ("Registrarse");
-        contraseña = new JPasswordField (5);
-        contraseñaR = new JPasswordField (5);
+        contrasenia_ingresada = new JPasswordField (5);
+        contraseniaR_ingresada = new JPasswordField (5);
         mayorDeEdad = new JCheckBox ("Declaro que soy mayor de edad");
         generoOpcion1 = new JRadioButton ("Masculino");
         generoOpcion2 = new JRadioButton ("Femenino");
@@ -68,8 +68,8 @@ public class MyPanel extends JPanel {
         add (genero);
         add (mayorDeEdad);
         add (registrarse);
-        add (contraseña);
-        add (contraseñaR);
+        add (contrasenia_ingresada);
+        add (contraseniaR_ingresada);
         add (mayorDeEdad);
         add (generoOpcion1);
         add (generoOpcion2);
@@ -89,8 +89,8 @@ public class MyPanel extends JPanel {
         genero.setBounds (20, 315, 100, 25);
         mayorDeEdad.setBounds (15, 360, 285, 30);
         registrarse.setBounds (205, 395, 115, 35);
-        contraseña.setBounds (195, 130, 155, 25);
-        contraseñaR.setBounds (195, 160, 155, 25);
+        contrasenia_ingresada.setBounds (195, 130, 155, 25);
+        contraseniaR_ingresada.setBounds (195, 160, 155, 25);
         mayorDeEdad.setBounds (20, 240, 220, 25);
         generoOpcion1.setBounds (85, 315, 100, 25);
         generoOpcion2.setBounds (185, 315, 100, 25);
