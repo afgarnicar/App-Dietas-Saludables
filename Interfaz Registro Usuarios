@@ -18,7 +18,6 @@ public class MyPanel extends JPanel {
     private JButton registrarse;
     private JPasswordField contrasenia_ingresada;
     private JPasswordField contraseniaR_ingresada;
-    private JCheckBox mayorDeEdad;
     private JRadioButton generoOpcion1;
     private JRadioButton generoOpcion2;
     private JRadioButton generoOpcion3;
